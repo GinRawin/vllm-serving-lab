@@ -1,0 +1,2 @@
+Generated benchmark_report.md from 4 result files.
+Charts: decode_latency.svg, duration.svg, success_rate.svg, throughput.svg, ttft.svg

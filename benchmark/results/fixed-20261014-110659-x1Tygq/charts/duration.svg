@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="445" viewBox="0 0 1120 445" role="img" aria-labelledby="title desc">
+<title id="title">Total benchmark duration vs. concurrency</title>
+<desc id="desc">Line charts of vLLM benchmark metrics versus configured maximum concurrency. Each marker represents one benchmark run. Lines connect observations only.</desc>
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#334155} .heading{font-size:23px;font-weight:700} .label{font-size:13px} .tick{font-size:12px;fill:#64748b} .value{font-size:11px;font-weight:600}</style>
+<text x="38" y="39" class="heading">Total benchmark duration vs. concurrency</text>
+<text x="38" y="61" class="tick">Qwen/Qwen3-0.6B | 30 requests per run | All requests succeeded in these runs</text>
+<text x="38" y="104" font-size="17" font-weight="600">Elapsed time for the complete run</text>
+<text x="90" y="129" class="tick">s</text>
+<line x1="90" y1="375.0" x2="1060" y2="375.0" stroke="#e2e8f0"/>
+<text x="78" y="379.0" text-anchor="end" class="tick">0.00</text>
+<line x1="90" y1="328.4" x2="1060" y2="328.4" stroke="#e2e8f0"/>
+<text x="78" y="332.4" text-anchor="end" class="tick">1.50</text>
+<line x1="90" y1="281.8" x2="1060" y2="281.8" stroke="#e2e8f0"/>
+<text x="78" y="285.8" text-anchor="end" class="tick">3.00</text>
+<line x1="90" y1="235.20000000000002" x2="1060" y2="235.20000000000002" stroke="#e2e8f0"/>
+<text x="78" y="239.20000000000002" text-anchor="end" class="tick">4.50</text>
+<line x1="90" y1="188.6" x2="1060" y2="188.6" stroke="#e2e8f0"/>
+<text x="78" y="192.6" text-anchor="end" class="tick">6.00</text>
+<line x1="90" y1="142.0" x2="1060" y2="142.0" stroke="#e2e8f0"/>
+<text x="78" y="146.0" text-anchor="end" class="tick">7.50</text>
+<line x1="90.0" y1="142" x2="90.0" y2="375" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="90.0" y="397" text-anchor="middle" class="tick">5</text>
+<line x1="284.0" y1="142" x2="284.0" y2="375" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="284.0" y="397" text-anchor="middle" class="tick">10</text>
+<line x1="672.0" y1="142" x2="672.0" y2="375" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="672.0" y="397" text-anchor="middle" class="tick">20</text>
+<line x1="1060.0" y1="142" x2="1060.0" y2="375" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="1060.0" y="397" text-anchor="middle" class="tick">30</text>
+<text x="575.0" y="424" text-anchor="middle" class="label">Configured maximum concurrency (requests)</text>
+<line x1="430" y1="100" x2="453" y2="100" stroke="#2563eb" stroke-width="3"/>
+<text x="461" y="104" class="label">Benchmark duration</text>
+<polyline points="90.00,174.69 284.00,259.49 672.00,288.37 1060.00,315.18" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="90.0" cy="174.688338993199" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 5: Benchmark duration = 6.4478 s</title></circle>
+<text x="90.0" y="162.688338993199" text-anchor="middle" class="value">6.45</text>
+<circle cx="284.0" cy="259.48655468214014" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 10: Benchmark duration = 3.7182 s</title></circle>
+<text x="284.0" y="247.48655468214014" text-anchor="middle" class="value">3.72</text>
+<circle cx="672.0" cy="288.37185332254114" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 20: Benchmark duration = 2.7885 s</title></circle>
+<text x="672.0" y="276.37185332254114" text-anchor="middle" class="value">2.79</text>
+<circle cx="1060.0" cy="315.1809683382792" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 30: Benchmark duration = 1.9255 s</title></circle>
+<text x="1060.0" y="303.1809683382792" text-anchor="middle" class="value">1.93</text>
+</svg>

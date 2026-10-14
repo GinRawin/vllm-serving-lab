@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="810" viewBox="0 0 1120 810" role="img" aria-labelledby="title desc">
+<title id="title">Throughput vs. concurrency</title>
+<desc id="desc">Line charts of vLLM benchmark metrics versus configured maximum concurrency. Each marker represents one benchmark run. Lines connect observations only.</desc>
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#334155} .heading{font-size:23px;font-weight:700} .label{font-size:13px} .tick{font-size:12px;fill:#64748b} .value{font-size:11px;font-weight:600}</style>
+<text x="38" y="39" class="heading">Throughput vs. concurrency</text>
+<text x="38" y="61" class="tick">Qwen/Qwen3-0.6B | 30 requests per run | All requests succeeded in these runs</text>
+<text x="38" y="104" font-size="17" font-weight="600">Successful request throughput</text>
+<text x="90" y="129" class="tick">requests/s</text>
+<line x1="90" y1="375.0" x2="1060" y2="375.0" stroke="#e2e8f0"/>
+<text x="78" y="379.0" text-anchor="end" class="tick">0</text>
+<line x1="90" y1="328.4" x2="1060" y2="328.4" stroke="#e2e8f0"/>
+<text x="78" y="332.4" text-anchor="end" class="tick">4</text>
+<line x1="90" y1="281.8" x2="1060" y2="281.8" stroke="#e2e8f0"/>
+<text x="78" y="285.8" text-anchor="end" class="tick">8</text>
+<line x1="90" y1="235.20000000000002" x2="1060" y2="235.20000000000002" stroke="#e2e8f0"/>
+<text x="78" y="239.20000000000002" text-anchor="end" class="tick">12</text>
+<line x1="90" y1="188.6" x2="1060" y2="188.6" stroke="#e2e8f0"/>
+<text x="78" y="192.6" text-anchor="end" class="tick">16</text>
+<line x1="90" y1="142.0" x2="1060" y2="142.0" stroke="#e2e8f0"/>
+<text x="78" y="146.0" text-anchor="end" class="tick">20</text>
+<line x1="90.0" y1="142" x2="90.0" y2="375" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="90.0" y="397" text-anchor="middle" class="tick">5</text>
+<line x1="284.0" y1="142" x2="284.0" y2="375" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="284.0" y="397" text-anchor="middle" class="tick">10</text>
+<line x1="672.0" y1="142" x2="672.0" y2="375" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="672.0" y="397" text-anchor="middle" class="tick">20</text>
+<line x1="1060.0" y1="142" x2="1060.0" y2="375" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="1060.0" y="397" text-anchor="middle" class="tick">30</text>
+<text x="575.0" y="424" text-anchor="middle" class="label">Configured maximum concurrency (requests)</text>
+<line x1="430" y1="100" x2="453" y2="100" stroke="#2563eb" stroke-width="3"/>
+<text x="461" y="104" class="label">Request throughput</text>
+<polyline points="90.00,320.80 284.00,281.00 672.00,249.66 1060.00,193.49" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="90.0" cy="320.79546719633385" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 5: Request throughput = 4.6527 requests/s</title></circle>
+<text x="90.0" y="308.79546719633385" text-anchor="middle" class="value">4.65</text>
+<circle cx="284.0" cy="281.00401563538816" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 10: Request throughput = 8.0683 requests/s</title></circle>
+<text x="284.0" y="269.00401563538816" text-anchor="middle" class="value">8.07</text>
+<circle cx="672.0" cy="249.661984396057" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 20: Request throughput = 10.7586 requests/s</title></circle>
+<text x="672.0" y="237.661984396057" text-anchor="middle" class="value">10.76</text>
+<circle cx="1060.0" cy="193.48920488380148" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 30: Request throughput = 15.5803 requests/s</title></circle>
+<text x="1060.0" y="181.48920488380148" text-anchor="middle" class="value">15.58</text>
+<text x="38" y="469" font-size="17" font-weight="600">Token throughput</text>
+<text x="90" y="494" class="tick">tokens/s</text>
+<line x1="90" y1="740.0" x2="1060" y2="740.0" stroke="#e2e8f0"/>
+<text x="78" y="744.0" text-anchor="end" class="tick">0</text>
+<line x1="90" y1="693.4" x2="1060" y2="693.4" stroke="#e2e8f0"/>
+<text x="78" y="697.4" text-anchor="end" class="tick">1,500</text>
+<line x1="90" y1="646.8" x2="1060" y2="646.8" stroke="#e2e8f0"/>
+<text x="78" y="650.8" text-anchor="end" class="tick">3,000</text>
+<line x1="90" y1="600.2" x2="1060" y2="600.2" stroke="#e2e8f0"/>
+<text x="78" y="604.2" text-anchor="end" class="tick">4,500</text>
+<line x1="90" y1="553.6" x2="1060" y2="553.6" stroke="#e2e8f0"/>
+<text x="78" y="557.6" text-anchor="end" class="tick">6,000</text>
+<line x1="90" y1="507.0" x2="1060" y2="507.0" stroke="#e2e8f0"/>
+<text x="78" y="511.0" text-anchor="end" class="tick">7,500</text>
+<line x1="90.0" y1="507" x2="90.0" y2="740" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="90.0" y="762" text-anchor="middle" class="tick">5</text>
+<line x1="284.0" y1="507" x2="284.0" y2="740" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="284.0" y="762" text-anchor="middle" class="tick">10</text>
+<line x1="672.0" y1="507" x2="672.0" y2="740" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="672.0" y="762" text-anchor="middle" class="tick">20</text>
+<line x1="1060.0" y1="507" x2="1060.0" y2="740" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="1060.0" y="762" text-anchor="middle" class="tick">30</text>
+<text x="575.0" y="789" text-anchor="middle" class="label">Configured maximum concurrency (requests)</text>
+<line x1="430" y1="465" x2="453" y2="465" stroke="#2563eb" stroke-width="3"/>
+<text x="461" y="469" class="label">Output tokens</text>
+<polyline points="90.00,721.50 284.00,707.92 672.00,697.22 1060.00,678.04" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="90.0" cy="721.4981861363486" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 5: Output tokens = 595.5519 tokens/s</title></circle>
+<circle cx="284.0" cy="707.9160373368792" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 10: Output tokens = 1032.7456 tokens/s</title></circle>
+<circle cx="672.0" cy="697.2179573405208" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 20: Output tokens = 1377.1044 tokens/s</title></circle>
+<circle cx="1060.0" cy="678.0443152670042" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 30: Output tokens = 1994.2817 tokens/s</title></circle>
+<line x1="640" y1="465" x2="663" y2="465" stroke="#ea580c" stroke-width="3"/>
+<text x="671" y="469" class="label">Input + output tokens</text>
+<polyline points="90.00,683.34 284.00,641.74 672.00,608.98 1060.00,550.26" fill="none" stroke="#ea580c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="90.0" cy="683.3381950425677" r="4.5" fill="#ea580c" stroke="white" stroke-width="1.5"><title>Concurrency 5: Input + output tokens = 1823.8778 tokens/s</title></circle>
+<circle cx="284.0" cy="641.7428643441924" r="4.5" fill="#ea580c" stroke="white" stroke-width="1.5"><title>Concurrency 10: Input + output tokens = 3162.7833 tokens/s</title></circle>
+<circle cx="672.0" cy="608.979994355345" r="4.5" fill="#ea580c" stroke="white" stroke-width="1.5"><title>Concurrency 20: Input + output tokens = 4217.3822 tokens/s</title></circle>
+<circle cx="1060.0" cy="550.2607155052004" r="4.5" fill="#ea580c" stroke="white" stroke-width="1.5"><title>Concurrency 30: Input + output tokens = 6107.4877 tokens/s</title></circle>
+</svg>

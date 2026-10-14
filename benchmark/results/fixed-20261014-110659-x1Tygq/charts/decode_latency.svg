@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="810" viewBox="0 0 1120 810" role="img" aria-labelledby="title desc">
+<title id="title">Generation latency vs. concurrency</title>
+<desc id="desc">Line charts of vLLM benchmark metrics versus configured maximum concurrency. Each marker represents one benchmark run. Lines connect observations only.</desc>
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#334155} .heading{font-size:23px;font-weight:700} .label{font-size:13px} .tick{font-size:12px;fill:#64748b} .value{font-size:11px;font-weight:600}</style>
+<text x="38" y="39" class="heading">Generation latency vs. concurrency</text>
+<text x="38" y="61" class="tick">Qwen/Qwen3-0.6B | 30 requests per run | All requests succeeded in these runs</text>
+<text x="38" y="104" font-size="17" font-weight="600">Time per output token (TPOT)</text>
+<text x="90" y="129" class="tick">ms/token</text>
+<line x1="90" y1="375.0" x2="1060" y2="375.0" stroke="#e2e8f0"/>
+<text x="78" y="379.0" text-anchor="end" class="tick">0</text>
+<line x1="90" y1="328.4" x2="1060" y2="328.4" stroke="#e2e8f0"/>
+<text x="78" y="332.4" text-anchor="end" class="tick">4</text>
+<line x1="90" y1="281.8" x2="1060" y2="281.8" stroke="#e2e8f0"/>
+<text x="78" y="285.8" text-anchor="end" class="tick">8</text>
+<line x1="90" y1="235.20000000000002" x2="1060" y2="235.20000000000002" stroke="#e2e8f0"/>
+<text x="78" y="239.20000000000002" text-anchor="end" class="tick">12</text>
+<line x1="90" y1="188.6" x2="1060" y2="188.6" stroke="#e2e8f0"/>
+<text x="78" y="192.6" text-anchor="end" class="tick">16</text>
+<line x1="90" y1="142.0" x2="1060" y2="142.0" stroke="#e2e8f0"/>
+<text x="78" y="146.0" text-anchor="end" class="tick">20</text>
+<line x1="90.0" y1="142" x2="90.0" y2="375" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="90.0" y="397" text-anchor="middle" class="tick">5</text>
+<line x1="284.0" y1="142" x2="284.0" y2="375" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="284.0" y="397" text-anchor="middle" class="tick">10</text>
+<line x1="672.0" y1="142" x2="672.0" y2="375" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="672.0" y="397" text-anchor="middle" class="tick">20</text>
+<line x1="1060.0" y1="142" x2="1060.0" y2="375" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="1060.0" y="397" text-anchor="middle" class="tick">30</text>
+<text x="575.0" y="424" text-anchor="middle" class="label">Configured maximum concurrency (requests)</text>
+<line x1="430" y1="100" x2="453" y2="100" stroke="#2563eb" stroke-width="3"/>
+<text x="461" y="104" class="label">Mean</text>
+<polyline points="90.00,284.24 284.00,273.88 672.00,255.50 1060.00,225.19" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="90.0" cy="284.235882605853" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 5: Mean = 7.7909 ms/token</title></circle>
+<circle cx="284.0" cy="273.8765146861487" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 10: Mean = 8.6801 ms/token</title></circle>
+<circle cx="672.0" cy="255.49529546039338" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 20: Mean = 10.2579 ms/token</title></circle>
+<circle cx="1060.0" cy="225.19071825876395" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 30: Mean = 12.8592 ms/token</title></circle>
+<line x1="640" y1="100" x2="663" y2="100" stroke="#ea580c" stroke-width="3"/>
+<text x="671" y="104" class="label">Median</text>
+<polyline points="90.00,285.67 284.00,274.23 672.00,246.68 1060.00,227.14" fill="none" stroke="#ea580c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="90.0" cy="285.67312767342895" r="4.5" fill="#ea580c" stroke="white" stroke-width="1.5"><title>Concurrency 5: Median = 7.6675 ms/token</title></circle>
+<circle cx="284.0" cy="274.23317313720145" r="4.5" fill="#ea580c" stroke="white" stroke-width="1.5"><title>Concurrency 10: Median = 8.6495 ms/token</title></circle>
+<circle cx="672.0" cy="246.67936804566855" r="4.5" fill="#ea580c" stroke="white" stroke-width="1.5"><title>Concurrency 20: Median = 11.0146 ms/token</title></circle>
+<circle cx="1060.0" cy="227.13716012280562" r="4.5" fill="#ea580c" stroke="white" stroke-width="1.5"><title>Concurrency 30: Median = 12.6921 ms/token</title></circle>
+<line x1="850" y1="100" x2="873" y2="100" stroke="#059669" stroke-width="3"/>
+<text x="881" y="104" class="label">P99</text>
+<polyline points="90.00,272.42 284.00,261.39 672.00,237.38 1060.00,213.03" fill="none" stroke="#059669" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="90.0" cy="272.4247754967608" r="4.5" fill="#059669" stroke="white" stroke-width="1.5"><title>Concurrency 5: P99 = 8.8047 ms/token</title></circle>
+<circle cx="284.0" cy="261.39074288839345" r="4.5" fill="#059669" stroke="white" stroke-width="1.5"><title>Concurrency 10: P99 = 9.7519 ms/token</title></circle>
+<circle cx="672.0" cy="237.3791770406031" r="4.5" fill="#059669" stroke="white" stroke-width="1.5"><title>Concurrency 20: P99 = 11.8129 ms/token</title></circle>
+<circle cx="1060.0" cy="213.03271510719907" r="4.5" fill="#059669" stroke="white" stroke-width="1.5"><title>Concurrency 30: P99 = 13.9028 ms/token</title></circle>
+<text x="38" y="469" font-size="17" font-weight="600">Inter-token latency (ITL)</text>
+<text x="90" y="494" class="tick">ms</text>
+<line x1="90" y1="740.0" x2="1060" y2="740.0" stroke="#e2e8f0"/>
+<text x="78" y="744.0" text-anchor="end" class="tick">0</text>
+<line x1="90" y1="693.4" x2="1060" y2="693.4" stroke="#e2e8f0"/>
+<text x="78" y="697.4" text-anchor="end" class="tick">4</text>
+<line x1="90" y1="646.8" x2="1060" y2="646.8" stroke="#e2e8f0"/>
+<text x="78" y="650.8" text-anchor="end" class="tick">8</text>
+<line x1="90" y1="600.2" x2="1060" y2="600.2" stroke="#e2e8f0"/>
+<text x="78" y="604.2" text-anchor="end" class="tick">12</text>
+<line x1="90" y1="553.6" x2="1060" y2="553.6" stroke="#e2e8f0"/>
+<text x="78" y="557.6" text-anchor="end" class="tick">16</text>
+<line x1="90" y1="507.0" x2="1060" y2="507.0" stroke="#e2e8f0"/>
+<text x="78" y="511.0" text-anchor="end" class="tick">20</text>
+<line x1="90.0" y1="507" x2="90.0" y2="740" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="90.0" y="762" text-anchor="middle" class="tick">5</text>
+<line x1="284.0" y1="507" x2="284.0" y2="740" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="284.0" y="762" text-anchor="middle" class="tick">10</text>
+<line x1="672.0" y1="507" x2="672.0" y2="740" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="672.0" y="762" text-anchor="middle" class="tick">20</text>
+<line x1="1060.0" y1="507" x2="1060.0" y2="740" stroke="#e2e8f0" stroke-dasharray="3 5"/>
+<text x="1060.0" y="762" text-anchor="middle" class="tick">30</text>
+<text x="575.0" y="789" text-anchor="middle" class="label">Configured maximum concurrency (requests)</text>
+<line x1="430" y1="465" x2="453" y2="465" stroke="#2563eb" stroke-width="3"/>
+<text x="461" y="469" class="label">Mean</text>
+<polyline points="90.00,649.94 284.00,639.67 672.00,621.43 1060.00,591.36" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="90.0" cy="649.9449772729948" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 5: Mean = 7.7300 ms</title></circle>
+<circle cx="284.0" cy="639.6665419151632" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 10: Mean = 8.6123 ms</title></circle>
+<circle cx="672.0" cy="621.4289259646091" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 20: Mean = 10.1778 ms</title></circle>
+<circle cx="1060.0" cy="591.3611032723675" r="4.5" fill="#2563eb" stroke="white" stroke-width="1.5"><title>Concurrency 30: Mean = 12.7587 ms</title></circle>
+<line x1="640" y1="465" x2="663" y2="465" stroke="#ea580c" stroke-width="3"/>
+<text x="671" y="469" class="label">Median</text>
+<polyline points="90.00,651.95 284.00,640.27 672.00,618.32 1060.00,592.77" fill="none" stroke="#ea580c" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="90.0" cy="651.9539833006002" r="4.5" fill="#ea580c" stroke="white" stroke-width="1.5"><title>Concurrency 5: Median = 7.5576 ms</title></circle>
+<circle cx="284.0" cy="640.267262499824" r="4.5" fill="#ea580c" stroke="white" stroke-width="1.5"><title>Concurrency 10: Median = 8.5608 ms</title></circle>
+<circle cx="672.0" cy="618.3171945965933" r="4.5" fill="#ea580c" stroke="white" stroke-width="1.5"><title>Concurrency 20: Median = 10.4449 ms</title></circle>
+<circle cx="1060.0" cy="592.7664495519275" r="4.5" fill="#ea580c" stroke="white" stroke-width="1.5"><title>Concurrency 30: Median = 12.6381 ms</title></circle>
+<line x1="850" y1="465" x2="873" y2="465" stroke="#059669" stroke-width="3"/>
+<text x="881" y="469" class="label">P99</text>
+<polyline points="90.00,615.07 284.00,619.38 672.00,571.59 1060.00,570.38" fill="none" stroke="#059669" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="90.0" cy="615.0671283909244" r="4.5" fill="#059669" stroke="white" stroke-width="1.5"><title>Concurrency 5: P99 = 10.7239 ms</title></circle>
+<circle cx="284.0" cy="619.3803563581573" r="4.5" fill="#059669" stroke="white" stroke-width="1.5"><title>Concurrency 10: P99 = 10.3536 ms</title></circle>
+<circle cx="672.0" cy="571.5874970150876" r="4.5" fill="#059669" stroke="white" stroke-width="1.5"><title>Concurrency 20: P99 = 14.4560 ms</title></circle>
+<circle cx="1060.0" cy="570.3766078989265" r="4.5" fill="#059669" stroke="white" stroke-width="1.5"><title>Concurrency 30: P99 = 14.5599 ms</title></circle>
+</svg>

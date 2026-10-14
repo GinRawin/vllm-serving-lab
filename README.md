@@ -42,3 +42,35 @@ kill "$(cat logs/qwen-server.pid)"
 
 修改采样后端可能影响吞吐量；此配置用于让当前没有 CUDA Toolkit 的环境正常运行，
 未进行性能基准测试。
+
+## 运行命令
+```bash
+VLLM_USE_FLASHINFER_SAMPLER=0 \
+vllm serve Qwen/Qwen3-0.6B \
+    --host 127.0.0.1 \
+    --port 8000 \
+    --max-model-len 4096 \
+    --gpu-memory-utilization 0.8
+```
+部署在端口8000，允许使用80%的显存。
+利用官方提供的benchmark进行压力测试
+```bash
+mkdir -p benchmark/results
+
+vllm bench serve \
+    --backend openai-chat \
+    --model Qwen/Qwen3-0.6B \
+    --host 127.0.0.1 \
+    --port 8000 \
+    --endpoint /v1/chat/completions \
+    --dataset-name random \
+    --random-input-len 256 \
+    --random-output-len 128 \
+    --num-prompts 30 \
+    --max-concurrency 1 \
+    --request-rate inf \
+    --ignore-eos \
+    --save-result \
+    --result-dir benchmark/results \
+    --result-filename c1.json
+```
